@@ -1,2 +1,6 @@
-app: ./src/*.cpp ./src/util/*.cpp
-	g++ -o app ./src/*.cpp ./src/util/*.cpp -I./include/app
+compile: ./src/*.cpp ./src/*/*.cpp
+	@echo "Compiling..."
+	@g++ -o app ./src/*.cpp ./src/*/*.cpp -I./include/app
+run:
+	@echo "Running App..."
+	@./app
